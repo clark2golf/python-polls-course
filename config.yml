@@ -1,0 +1,16 @@
+title: Python Polls
+description: 'A simple Python/Django app '
+template:
+  repo: python-polls-template
+  name: python-polls
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
